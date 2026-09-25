@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "liteparse": {
+      "source": "run-llama/llamaparse-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/liteparse/SKILL.md",
+      "computedHash": "7f91112b713a4a7e6f2e30de05fa5ee16ae437d657487490e1767a2072626060"
+    },
+    "llamacloud-index": {
+      "source": "run-llama/llamaparse-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/llamacloud-index/SKILL.md",
+      "computedHash": "a55155b6f46d8defb265e64aa13afd7147bccbd7245fa6e5050bf7602ed869b8"
+    },
+    "llamaparse": {
+      "source": "run-llama/llamaparse-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/llamaparse/SKILL.md",
+      "computedHash": "43e155be048b413a47c4f9966da586c2c1ef09b068146dc5dd0ccda966410ca4"
+    }
+  }
+}

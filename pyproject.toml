@@ -1,0 +1,40 @@
+[project]
+name = "deal-checker"
+version = "0.1.0"
+description = "Drop in brand deal contracts. Get red flags with page numbers. Built on LlamaParse."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = [
+    "llama-cloud>=2.16,<3",
+    "llama-index-workflows>=2.24,<3",
+    "pypdf>=5.0",
+    "python-dotenv>=1.0",
+]
+
+[project.scripts]
+deal-checker = "deal_checker.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=1.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.7,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+# Lets `llamactl serve` run the same workflow as an API (LlamaAgents).
+[tool.llamaagents]
+name = "deal-checker"
+env_files = [".env"]
+required_env_vars = ["LLAMA_CLOUD_API_KEY"]
+
+[tool.llamaagents.workflows]
+check-deals = "deal_checker.workflow:workflow"
