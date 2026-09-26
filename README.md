@@ -68,7 +68,7 @@ MAX_EXCLUSIVITY_DAYS = 30
 MAX_REVISION_ROUNDS = 2
 ```
 
-To check something new, add a field to `schema.py` and a rule to `rules.py`. The same pattern works for invoices, leases or job offers.
+To check something new, add a field to `schema.py` and a rule to `rules.py`. Everybody has documents they never read properly — the same pattern works for invoices, leases or job offers.
 
 ## Cost
 
