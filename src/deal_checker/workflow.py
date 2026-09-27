@@ -22,7 +22,7 @@ from .schema import DealTerms
 TIERS = {
     "cost_effective": ("cost_effective", "cost_effective"),
     "agentic": ("agentic", "agentic"),
-    "agentic_plus": ("agentic", "agentic_plus"),
+    "agentic_plus": ("agentic_plus", "agentic_plus"),
 }
 VERSION = "latest"  # pin a date, for example "2026-09-14", in production
 

@@ -20,7 +20,7 @@ from .report import print_summary
 from .workflow import TIERS, CheckDeals, Progress, workflow
 
 SUPPORTED = {".pdf", ".docx", ".png", ".jpg", ".jpeg"}
-CREDITS_PER_PAGE = {"cost_effective": 8, "agentic": 25, "agentic_plus": 60}  # parse + extract
+CREDITS_PER_PAGE = {"cost_effective": 8, "agentic": 25, "agentic_plus": 95}  # parse + extract
 
 
 def collect(inputs: list[str]) -> list[str]:
